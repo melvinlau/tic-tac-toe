@@ -6,6 +6,11 @@ class Field {
   get content() {
     return this._content;
   }
+
+  claim(player) {
+    return this._content = player;
+  }
+
 }
 
 export default Field;
