@@ -12,4 +12,9 @@ describe('Board', () => {
     expect(board.fields).toEqual([]);
   });
 
+  test('#renderFields generates 9 unique fields', () => {
+    board.renderFields();
+    expect(board.fields.length).toEqual(9);
+  });
+
 });
