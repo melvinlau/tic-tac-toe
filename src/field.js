@@ -1,6 +1,10 @@
 class Field {
   constructor() {
-    this.content = null;
+    this._content = null;
+  }
+
+  get content() {
+    return this._content;
   }
 }
 
