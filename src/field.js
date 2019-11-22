@@ -8,7 +8,7 @@ class Field {
   }
 
   claim(player) {
-    return this._content = player;
+    if (this._content === null) return this._content = player;
   }
 
 }
