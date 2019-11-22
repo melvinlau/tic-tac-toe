@@ -1,14 +1,11 @@
 class Field {
-  constructor() {
-    this._content = null;
-  }
 
-  get content() {
-    return this._content;
+  constructor() {
+    this.content = null;
   }
 
   claim(player) {
-    if (this._content === null) return this._content = player;
+    if (this.content === null) return this.content = player;
   }
 
 }
