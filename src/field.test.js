@@ -9,14 +9,12 @@ beforeEach(() => {
 describe('Field', () => {
 
   test('#claim(arg) lets Player X claim a field', () => {
-    field.claim('X');
-    expect(field.content).toEqual('X');
+    expect(field.claim('X')).toEqual('X');
   });
 
   test('#claim(arg) does not let a player claim a field that is already claimed', () => {
     field.claim('X');
-    field.claim('O');
-    expect(field.content).toEqual('X');
+    expect(field.claim('O')).toEqual('X');
   });
 
 });

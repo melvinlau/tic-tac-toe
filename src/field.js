@@ -5,7 +5,11 @@ class Field {
   }
 
   claim(player) {
-    if (this.content === null) return this.content = player;
+    if (this.content === null) {
+      return this.content = player;
+    } else {
+      return this.content;
+    }
   }
 
 }
